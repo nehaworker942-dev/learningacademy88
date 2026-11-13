@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>$ VIP TRADER OFFICIAL | Join Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --tg-blue: #2AABEE;
+            --gold: #D4A017;
+            --bg-light: #F5F7FA;
+            --bg-card: #FFFFFF;
+            --text-primary: #1A2332;
+            --text-secondary: #5A6A7A;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-light);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .bg-gradient {
+            position: fixed;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse 90% 60% at 50% -20%, rgba(42, 171, 238, 0.12), transparent),
+                radial-gradient(ellipse 50% 40% at 85% 90%, rgba(212, 160, 23, 0.05), transparent);
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 440px;
+            padding: 16px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 24px;
+            padding: 28px 26px 20px;
+            text-align: center;
+            box-shadow: 0 14px 44px -10px rgba(0, 0, 0, 0.12);
+            width: 100%;
+        }
+
+        /* Logo */
+        .logo-wrapper {
+            width: 84px;
+            height: 84px;
+            margin: 0 auto 14px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(135deg, var(--tg-blue), var(--gold), var(--tg-blue));
+            box-shadow: 0 0 0 5px rgba(42, 171, 238, 0.1), 0 8px 22px rgba(42, 171, 238, 0.18);
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2.5px solid #fff;
+            display: block;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 3px;
+            color: #1A2332;
+            line-height: 1.2;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.45;
+            margin-bottom: 16px;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding: 10px 14px;
+            background: rgba(42, 171, 238, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(42, 171, 238, 0.08);
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: linear-gradient(135deg, rgba(42, 171, 238, 0.15), rgba(212, 160, 23, 0.1));
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .feature-text {
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: #2A3A4A;
+        }
+
+        .subscribers {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #1A2332;
+            margin-bottom: 14px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 15px 22px;
+            background: linear-gradient(135deg, var(--tg-blue) 0%, #1a8bc4 100%);
+            color: white;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 13px;
+            box-shadow: 0 7px 20px rgba(42, 171, 238, 0.32);
+            transition: all 0.25s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 11px 26px rgba(42, 171, 238, 0.4);
+        }
+
+        .cta-button svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            padding: 6px 13px;
+            background: rgba(42, 171, 238, 0.1);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: var(--tg-blue);
+            font-weight: 500;
+        }
+
+        .badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #22C55E;
+            border-radius: 50%;
+            animation: blink 1.6s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        .bottom-section {
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .motto {
+            font-size: 0.85rem;
+            color: var(--gold);
+            font-weight: 500;
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+
+        .ads-managed {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .ads-managed a {
+            color: var(--tg-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .disclaimer {
+            font-size: 0.65rem;
+            color: #8A9AAA;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        /* Short screens */
+        @media (max-height: 700px) {
+            .logo-wrapper { width: 68px; height: 68px; margin-bottom: 10px; }
+            .brand-name { font-size: 1.2rem; }
+            .tagline { font-size: 0.82rem; margin-bottom: 6px; }
+            .subtitle { font-size: 0.8rem; margin-bottom: 12px; }
+            .features { gap: 6px; margin-bottom: 12px; }
+            .feature { padding: 8px 12px; }
+            .feature-icon { width: 28px; height: 28px; min-width: 28px; font-size: 0.9rem; }
+            .feature-text { font-size: 0.8rem; }
+            .subscribers { font-size: 0.82rem; margin-bottom: 12px; }
+            .cta-button { padding: 12px 18px; font-size: 0.95rem; }
+            .badge { margin-top: 10px; font-size: 0.7rem; }
+            .bottom-section { margin-top: 12px; padding-top: 12px; }
+            .motto { font-size: 0.78rem; margin-bottom: 8px; }
+            .ads-managed { font-size: 0.7rem; margin-bottom: 8px; }
+            .disclaimer { font-size: 0.6rem; }
+            .card { padding: 20px 18px 14px; }
+            .container { max-width: 400px; padding: 12px; }
+        }
+
+        @media (max-width: 360px) {
+            .container { padding: 10px; }
+            .brand-name { font-size: 1.15rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="logo-wrapper">
+                <img 
+                    src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=200&h=200&fit=crop&q=85" 
+                    alt="$ VIP TRADER OFFICIAL"
+                    class="logo-img"
+                    loading="eager"
+                >
+            </div>
+
+            <h1 class="brand-name">$ VIP TRADER OFFICIAL</h1>
+            <p class="tagline">जय महाराष्ट्र!</p>
+
+            <p class="subtitle">
+                Exclusive trading signals & premium community
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <div class="feature-text">Daily VIP trading signals</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-text">Real-time market updates</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👑</div>
+                    <div class="feature-text">Exclusive VIP community</div>
+                </div>
+            </div>
+
+            <p class="subscribers">Thousands of subscribers joined</p>
+
+            <a href="https://t.me/+eRVCVlGywzw2NWM1" class="cta-button" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
+                Join Now
+            </a>
+
+            <div class="badge">Live VIP Community</div>
+
+            <div class="bottom-section">
+                <p class="ads-managed">
+                    Ads Managed by 
+                    <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank" rel="noopener noreferrer">@Nexgroww_agency</a>
+                </p>
+                <p class="disclaimer">
+                    Disclaimer: This is an independent informational page. We are not affiliated with any third-party service. Use of any linked platform is at your own discretion and responsibility. No guarantees of any kind are made.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
